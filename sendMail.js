@@ -15,7 +15,7 @@ function sendEmail(temp) {
         from: 'pedro.silva47200@gmail.com',
         to: 'pedro.silva4720@gmail.com',
         subject: 'alo',
-        text: `temp: ${temp}`
+        text: `temp: ${temp.temp}`
     };
 
     transporter.sendMail(mailOptions, function(error, info) {
