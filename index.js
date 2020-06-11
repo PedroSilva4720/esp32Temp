@@ -10,7 +10,7 @@ app.get('/', (req, res) => {
     mail(temp);
     return res.json({
         "Status": "ok",
-        "temp": req.query.temp,
+        "temp": req.query,
     });
 
 });
