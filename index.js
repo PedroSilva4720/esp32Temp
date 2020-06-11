@@ -6,7 +6,7 @@ app = express()
 
 // app.use(cors)
 
-app.post('/', (req, res) => {
+app.get('/', (req, res) => {
     mail(temp);
     return res.json({
         "Status": "ok",
