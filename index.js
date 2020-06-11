@@ -7,7 +7,7 @@ app = express()
 // app.use(cors)
 
 app.get('/', (req, res) => {
-    mail(temp);
+    mail(req.query);
     return res.json({
         "Status": "ok",
         "temp": req.query,
